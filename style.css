@@ -16,16 +16,22 @@ body{
 /* NAVIGATION */
 
 .nav-bg{
-    background-color: rgba(235, 235, 235, 0.672);
-    border-radius: 1px;
-    margin: 0px;
-   
+    background-color: rgb(237, 237, 237);
+    border-radius: 3px;
+    margin: 0;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+}
+main{
+    padding-top:7em ;
+}
 
 .top-nav{
  display: flex;
  flex-direction: row;
+ padding:.5em ;
   
 }
 .form{  
@@ -33,62 +39,100 @@ body{
     flex-grow: 0;
     flex-basis: 49%; */
     width: 49%;
+    border: 1px solid rgb(193, 193, 204);
+    margin: 0em .5em;
+    border-radius: 2px;
+    background-color: white;
+   
 }
 .logo{
-   max-width: 10%;
+   max-width: 120px;
 }
 
-input[type="search"]{
-     background-image: url("image/search.svg");
-    width:100% ;
-    padding:.4em 1em;
-    margin: 0em 1em;
+input[type="text"]{
+    border: none;
+    width: 90%;
+    max-height: 30px;
+
+}
+.form-input:focus-within{
+ outline: none;
+
+}
+.search-img{
+    position: relative;
+    height: 20px;
+    top: 5px;
+}
+.icon{
+    height:25px;
+    padding:4px;
+}
+.avater{
+    border:1px solid black;
+    border-radius:100px;
+    background-color: black;
+    width: 25px;
+    height:25px;
+}
+@media screen and (max-width:700px) {
+    .logo{
+        max-width:80px;
+       max-height: 30px;
+     }
+
+     input[type="text"]{
+        border: none;
+        width: 80%;
+       max-height: 10px;
+    
+    }
+   
 }
 
 #nav-bg{
-    width: 70%;
-   margin-bottom: 1em;
-    
+max-width: 70%;
+   margin-bottom: .5em;    
 }
 
-
-
 .nav{
-  
     display: flex;
     list-style: none;
     padding:.2em 0em;
-   margin: 0px;
+   margin: 0;
     
     
 }
 .nav >li{
     padding:0.5em ;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
+}
+.nav >li :hover{
+    color: blue;
+    border-bottom:2px solid blue ;
 }
 .push{
     margin-left: auto;
 }
 a{
     text-decoration: none;
-    color: rgb(75, 73, 73);
+    color: rgb(119, 117, 117);
 }
+
 /* 
 MAIN */
 .search-speed{
-    font-size: 13px;
+    font-size: 0.812rem;
 }
 .title > a {
-    font-size:20px ;
+    font-size:1.25rem ;
     color: #1a0dab;
-    line-height: 0px;
+
 }
 .text{
     margin: ;
     color:green;
-    line-height: 0px;
-    
 }
 
 
@@ -108,14 +152,30 @@ td{
     padding:0em .5em;
     
 }
+/* .drop-down{
+   display: inline-block;
+}
+.drop-down > img{
+    float: right;
+     
+ }  */
+
 main{
-    width: 70%;
+    max-width: 70%;
  
 }
 .middle{
     max-width: 70%;
     margin: 0em auto;  
 }
+
+@media screen and (max-width:700px) {
+    main{
+        max-width: 100%;
+    }
+    
+}
+
 
 /* NAVIGATION */
 
