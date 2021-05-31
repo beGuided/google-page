@@ -51,6 +51,9 @@ main{
 input[type="text"]{
     border: none;
     width: 90%;
+    padding: 12px 0 0 12px;
+   
+  
 
 
 }
@@ -62,6 +65,7 @@ input[type="text"]{
     position: relative;
     max-height: 20px;
     top: 7px;
+
     
 }
 .icon{
@@ -72,8 +76,8 @@ input[type="text"]{
     border:1px solid black;
     border-radius:100px;
     background-color: black;
-    width: 25px;
-    height:25px;
+    width: 30px;
+    height:30px;
 }
 
 
@@ -153,12 +157,19 @@ hr{
     :root{
         font-size: 12px;
     }
-    
+    main{
+        padding-top:5em ;
+
+    }
 
     .logo{
         max-width:80px;
+        padding-right:2px ;
        max-height: 30px;
      }
+     .icon{
+        display: none;
+    }
      .middle{
          padding: 0 20px;
      }
@@ -169,8 +180,12 @@ hr{
      input[type="text"]{
         border: none;
         width: 80%;
-       max-height: 10px;
+       /* max-height: 10px; */
     
+    }
+    .search-img{
+        top:0px;
+        width: 15px;
     }
    
 }
